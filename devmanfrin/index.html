@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevEduardo</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./fotos/icone.ico" type="image/x-icon">
 </head>
 <body>
     <header class="headprincipal">
-        <h1 class="txthead">EDUARDO MANFRIN</h1>
+        <h1 class="nome">EDUARDO MANFRIN</h1>
         <div class="conthead">
-            <a href="#">Início</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+            <a href="https://www.devmanfrin.com.br">Início</a>
+            <a href="https://www.devmanfrin.com.br">Projetos</a>
+            <a href="https://www.devmanfrin.com.br">Contato</a>
         </div>
     </header>
     <main>
@@ -29,25 +30,25 @@
         <section>
             <aside id="conhecimentos">
                 <h2>Conhecimentos adquiridos  na tecnologia</h2>
-                <div>
+                <div id="js">
                     <h3>JavaScript</h3>
                     <p>Feito no Curso em Vídeo</p>
                     <p>Concluído em 02/08/2022</p>
                     <p>40 Horas</p>
                 </div>
-                <div>
-                    <h3>HTML5 e CSS3</h3>
+                <div id="htmlcss">
+                    <h3>CSS3 e HTML5</h3>
                     <p>Feito no Curso em Vídeo</p>
                     <p>Concluído 02/08/2022</p>
                     <p>120 Horas</p>
                 </div>
-                <div>
+                <div id="worldexcel">
                     <h3>World - Excel</h3>
                     <p>Feito no Curso em Vídeo</p>
                     <p>Concluído 15/08/2022</p>
                     <p>80 Horas</p>
                 </div>
-                <div>
+                <div id="suportehardware">
                    <h3>Suporte de Hardware</h3> 
                    <p>Feito pela Gigabyte Sul</p>
                    <p>Concluído 27/11/2015</p>
@@ -55,25 +56,61 @@
                 </div>
             </aside>
         </section>
-        <section id="iframe">
+        <section id="projetos">
             <h2>Projetos Criados</h2>
-            <h3>Projeto Android</h3>
-            <iframe src="./projeto-android/android.html" frameborder="0"></iframe>
-            <h3>Projeto Cordel</h3>
-            <iframe src="./projeto-cordel/cordel.html" frameborder="0"></iframe>
-            <h3>Projeto Página de Captura</h3>
-            <iframe src="./projeto-pagina-captura/pgcaptura.html" frameborder="0"></iframe>
-            <h3>Projeto Yoga</h3>
-            <iframe src="./projeto-yoga/index.html" frameborder="0"></iframe>
+            <a href="./projetos/android.html">
+                <div class="boxsite">
+                    <h3 class="txtsite">Projeto Android</h3>
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="./fotos/android-p.png">
+                        <img src="./fotos/android-m.png" alt="foto android" class="picturesite">
+                    </picture>
+                </div>
+            </a>
+            <a href="./projetos/cordel.html">
+                <div class="boxsite">
+                    <h3 class="txtsite">Projeto Cordel</h3>
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="./fotos/cordel-p.png">
+                        <img src="./fotos/cordel-m.png" alt="foto cordel" class="picturesite">
+                    </picture>
+                </div>
+            </a>
+            <a href="./projetos/captura.html">
+                <div class="boxsite">
+                    <h3 class="txtsite">Projeto Página de Captura</h3>
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="./fotos/captura-p.png">
+                        <img src="./fotos/captura-m.png" alt="foto página de captura" class="picturesite">
+                    </picture>
+                </div>
+            </a>
+            <a href="./projetos/yoga.html">
+                <div class="boxsite">
+                    <h3 class="txtsite">Projeto Yoga</h3>
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="./fotos/yoga-p.png">
+                        <img src="./fotos/yoga-m.png" alt="foto cordel" class="picturesite">
+                    </picture>
+                </div>
+            </a>
         </section>
     </main>
     <footer>
         <h3>Contatos</h3>
         <ul>
-            <a href="https://github.com/Eduardo-Manfrin" target="_blank" class="footera"><li class="footer">GitHub: Eduardo-Manfrin</li></a>
-            <a href="https://www.linkedin.com/in/eduardo-manfrin-04372b236/" target="_blank" class="footera"><li class="footer">LinkedIn: Eduardo Manfrin</li></a>
-            <li class="footer">Email: eduardomanfrin00@gmail.com</li>
-            <a href="https://www.instagram.com/edu_manfrin/" target="_blank" class="footera"><li class="footer">Instagram: edu_manfrin</li></a>
+            <a href="https://github.com/Eduardo-Manfrin" target="_blank" class="footera">
+                <li class="footer">GitHub: Eduardo-Manfrin</li>
+            </a>
+            <a href="https://www.linkedin.com/in/eduardo-manfrin-04372b236/" target="_blank" class="footera">
+                <li class="footer">LinkedIn: Eduardo Manfrin</li>
+            </a>
+            <a href="mailto:eduardomanfrin00@gmail.com" target="_blank" class="footera">
+                <li class="footer">Email: eduardomanfrin00@gmail.com</li>
+            </a>
+            <a href="https://www.instagram.com/edu_manfrin/" target="_blank" class="footera">
+                <li class="footer">Instagram: edu_manfrin</li>
+            </a>
             <li class="footer">Whatsapp: (48) 99150-6999</li>
         </ul>
     </footer>

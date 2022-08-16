@@ -25,27 +25,30 @@ body{
 p{ 
     font-family: var(--fonte-texto);
 }
-header{
+.headprincipal{
     background-color: #091633c4;
+    width: 100%;
     max-height: max-content;
-    padding: 5px;
     overflow: auto;
-    position: sticky;
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
-.txthead{
+.nome{
     font-size: 2em;
     color: var(--cor02);
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.61);
     display: inline-block;
-    margin: 0px auto 0px 5vw;
+    margin: 8px auto 5px 5vw;
     font-family: var(--fonte-titulo);
 }
 .conthead{
     float: right;
     background-color: var(--cor02);
     border-radius: 2px;
+    margin: 3px;
 }
-header > div > a{
+.conthead > a{
     text-decoration: none;
     color: var(--cor01);
     float: left;
@@ -66,7 +69,6 @@ article{
     background-attachment: fixed;
     padding: 60px 0px 20px 0px;
     overflow: hidden;
-    margin: -50px 0px 0px 0px;
     text-align: center;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.432);
 }
@@ -94,6 +96,7 @@ article{
     margin: auto;
     overflow: auto;
     box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.404);
+    text-align: center;
 }
 #conhecimentos > h2{
     max-width: max-content;
@@ -110,16 +113,32 @@ article{
     width: max-content;
     font-family: var(--fonte-texto);
     width: 180px;
-    float: left;
+    display: inline-block;
     background-color: var(--cor03);
     box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.555);
     border-radius: 3px;
     padding: 3px;
 }
+#js{
+    background-image: url(../fotos/javascript.png);
+    background-position: center center;
+    background-size: 160px 110px;
+}
+#htmlcss{
+    background-image: url(../fotos/htmlcss.png);
+    background-position: center center;
+}
+#worldexcel{
+    background-image: url(../fotos/worldexcel.png);
+    background-position: center center;
+}
 #conhecimentos > div > h3{
     text-align: center;
 }
-#iframe{
+#conhecimentos > div > p{
+    background-color: rgba(255, 255, 255, 0.432);
+}
+#projetos{
     background-image: url(../fotos/fundo-ft-perfil.jpg);
     background-position: center center;
     background-size: cover;
@@ -127,7 +146,7 @@ article{
     text-align: center;
     padding: 20px;
 }
-#iframe > h2{
+#projetos > h2{
     margin: auto;
     padding: 30px;
     font-size: 2em;
@@ -136,17 +155,26 @@ article{
     max-width: max-content;
     background-color: #091633c2;
 }
-#iframe > h3{
+.boxsite{
+    width: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+.txtsite{
     margin: 30px auto 10px auto;
-    width: 70%;
     font-family: var(--fonte-titulo);
     font-size: 1.7em;
     background-color: rgba(255, 255, 255, 0.733);
 }
-#iframe > iframe{
-    width: 70%;
-    height: 400px;
-    border: 3px solid var(--cor01);
+.picturesite{
+    border: 1px solid var(--cor01);
+    width: 100%;
+}
+#projetos > a{
+    color: var(--cor01);
+}
+#projetos > a:hover .boxsite{
+    width: 410px;
 }
 footer{
     background-color: var(--cor01);
@@ -168,13 +196,31 @@ footer > h3{
 }
 .footera{
     text-decoration: none;
+    text-align: justify;
 }
 @media screen and (max-width:650px) {
+    header{
+        width: 97.4vw;
+    }
+    .nome{
+        font-size: 1.7em;
+    }
     article{
-        margin: -90px 0px 0px 0px; 
-        padding: 110px 0px 20px 0px;
+        padding: 90px 0px 20px 0px;
     }
     #txtperfil{
         position: static;
+    }
+    #projetos > a > div {
+        width: 70%;
+    }
+    #projetos > a:hover .boxsite{
+        width: 75%;
+    }
+    .footer{
+        font-size: 1.3em;
+    }
+    #iframe{
+        padding: 90px 0px 20px 0px;
     }
 }
